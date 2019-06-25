@@ -1,11 +1,17 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - Entry point
+ * add - Entry point
+ * @i: Int
+ * @j: Int
  *
- * Return: Always 0 (Success)
+ * Return: i & j added together
  */
-int main(void)
+int add(int i, int j)
 {
-    return (0);
+	int k;
+
+	k = i + j;
+
+return (k);
 }

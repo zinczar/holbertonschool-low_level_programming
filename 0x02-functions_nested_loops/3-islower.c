@@ -5,7 +5,14 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int _islower(int c)
 {
-    return (0);
+	if (c >= 97)
+	{
+		return(1);
+	}
+	else
+	{
+		return(0);
+	}
 }

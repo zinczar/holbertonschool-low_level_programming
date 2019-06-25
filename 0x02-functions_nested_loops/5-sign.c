@@ -1,11 +1,26 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - Entry point
+ * print_sign - Entry point
+ * @n: Int
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int print_sign(int n)
 {
-    return (0);
+	if (n > 0)
+	{
+		_putchar('+');
+		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar('0');
+		return (0);
+	}
+	else
+	{
+		_putchar('-');
+		return (-1);
+	}
 }

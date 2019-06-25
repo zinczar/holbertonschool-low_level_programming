@@ -1,11 +1,26 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - Entry point
+ * jack_bauer - Entry point
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void jack_bauer(void)
 {
-    return (0);
+	int i, j;
+
+	for (i = 0; i <= 23; i++)
+	{
+		for (j = 0; j < 60; j++)
+		{
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+			_putchar(':');
+			_putchar((j / 10) + '0');
+			_putchar((j % 10) + '0');
+			{
+				_putchar('\n');
+			}
+		}
+	}
 }

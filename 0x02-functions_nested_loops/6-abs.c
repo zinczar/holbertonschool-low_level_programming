@@ -1,11 +1,16 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - Entry point
+ * _abs - Entry point
+ * @i: Int
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int _abs(int i)
 {
-    return (0);
+	if (i < 0)
+	{
+		i = -i;
+	}
+	return (i);
 }

@@ -1,11 +1,26 @@
-#include holberton.h
+#include "holberton.h"
 
 /**
- * main - code
+ * print_square - code
+ * @size: Int
  *
  * Return: Always 0.
  */
-int main(void)
+void print_square(int size)
 {
-    return (0);
+	int i, j;
+
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+
+	for (i = 0; i < size; i++)
+	{
+		for (j = 0; j < size; j++)
+		{
+			_putchar('#');
+		}
+		_putchar('\n');
+	}
 }

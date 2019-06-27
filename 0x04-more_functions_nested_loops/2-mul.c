@@ -1,11 +1,15 @@
-#include holberton.h
+#include "holberton.h"
 
 /**
- * main - code
+ * mul - code
  *
  * Return: Always 0.
  */
-int main(void)
+int mul(int a, int b)
 {
-    return (0);
+	int c;
+
+	c = a * b;
+
+    return (c);
 }

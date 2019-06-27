@@ -1,11 +1,17 @@
-#include holberton.h
+#include "holberton.h"
 
 /**
- * main - code
+ * print_numbers - code
  *
  * Return: Always 0.
  */
-int main(void)
+void print_numbers(void)
 {
-    return (0);
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		_putchar(i + '0');
+	}
+	_putchar('\n');
 }

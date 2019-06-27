@@ -1,11 +1,18 @@
-#include holberton.h
+#include "holberton.h"
 
 /**
- * main - code
+ * _isdigit - code
  *
  * Return: Always 0.
  */
-int main(void)
+int _isdigit(int c)
 {
-    return (0);
+	if ((c >= 48) && (c <= 57))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

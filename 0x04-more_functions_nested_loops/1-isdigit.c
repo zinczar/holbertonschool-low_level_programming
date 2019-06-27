@@ -2,6 +2,7 @@
 
 /**
  * _isdigit - code
+ * @c: Int
  *
  * Return: Always 0.
  */

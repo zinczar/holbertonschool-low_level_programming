@@ -2,6 +2,7 @@
 
 /**
  * print_line - code
+ * @n: Int
  *
  * Return: Always 0.
  */

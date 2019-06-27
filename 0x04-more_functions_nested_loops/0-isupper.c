@@ -2,6 +2,7 @@
 
 /**
  * _isupper - code
+ * @c: Int
  *
  * Return: Always 0.
  */

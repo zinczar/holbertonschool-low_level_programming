@@ -8,22 +8,26 @@
  */
 void print_to_98(int n)
 {
-	int i, j;
+	int i, j, k;
 
 	if (n < 98)
 	{
-		for (i = n; i <= 98; i++)
+		for (i = n; i <= 9; i++)
 		{
-			if ((i / 10) == 0)
+			for (k = 0; k <= 8; k++)
 			{
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
-				_putchar(',');
-				_putchar(' ');
+				if ((i / 10) == 0)
+				{
+					_putchar(' ');
+					_putchar(k + '0');
+				}
+				else
+				{
+					_putchar((i / 10) + '0');
+					_putchar(k + '0');
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');

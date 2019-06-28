@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -14,39 +16,28 @@ void print_to_98(int n)
 	{
 		for (i = n; i <= 9; i++)
 		{
-			for (k = 0; k <= 8; k++)
+			printf("%d", i);
+			if (i != 98)
 			{
-				if ((i / 10) == 0)
-				{
-					_putchar(' ');
-					_putchar(k + '0');
-				}
-				else
-				{
-					_putchar((i / 10) + '0');
-					_putchar(k + '0');
-					_putchar(',');
-					_putchar(' ');
-				}
+				printf(", ");
 			}
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 	else if (n > 98)
 	{
 		for (j = n; j > 98; j--)
 		{
-			_putchar((j / 10) + '0');
-			_putchar((j % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d", j);
+			if (j != 98)
+			{
+				printf(", ");
+			}
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 	else
 	{
-		_putchar(9 + '0');
-		_putchar(8 + '0');
+		printf("98\n");
 	}
-	_putchar('\n');
 }

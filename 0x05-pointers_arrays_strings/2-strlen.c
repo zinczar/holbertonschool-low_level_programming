@@ -1,11 +1,18 @@
-#include holberton.h
+#include "holberton.h"
 
 /**
  * main - code
  *
  * Return: Always 0.
  */
-int main(void)
+int _strlen(char *s)
 {
-    return (0);
+	int i;
+	int count = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		count++;
+	}
+	return (count);
 }

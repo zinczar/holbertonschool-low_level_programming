@@ -1,7 +1,9 @@
 #include "holberton.h"
 
 /**
- * main - code
+ * swap_int - code
+ * @a: Int
+ * @b: Int
  *
  * Return: Always 0.
  */

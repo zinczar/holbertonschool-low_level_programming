@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- * main - code
+ * _strlen - code
+ * @s: Char
  *
  * Return: Always 0.
  */

@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- * main - code
+ * reset_to_98 - code
+ * @n: Int
  *
  * Return: Always 0.
  */

@@ -1,4 +1,4 @@
-#include ”holberton.h”
+#include "holberton.h"
 
 /**
  * _print_rev_recursion - code
@@ -8,6 +8,10 @@
  */
 void _print_rev_recursion(char *s)
 {
-Return (0);
-
+	if (*s == '\0')
+	{
+		return;
+	}
+        _print_rev_recursion(++s);
+        _putchar(*s);
 }

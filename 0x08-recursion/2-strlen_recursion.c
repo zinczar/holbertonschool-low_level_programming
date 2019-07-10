@@ -1,4 +1,4 @@
-#include ”holberton.h”
+#include "holberton.h"
 
 /**
  * _strlen_recursion - code
@@ -8,6 +8,12 @@
  */
 int _strlen_recursion(char *s)
 {
-Return (0);
+	int length = 0;
 
+	while (*s != '\0')
+	{
+		length++;
+		_strlen_recursion(++s);
+	}
+	return (length);
 }

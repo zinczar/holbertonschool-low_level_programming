@@ -1,4 +1,4 @@
-#include ”holberton.h”
+#include "holberton.h"
 
 /**
  * _puts_recursion - code
@@ -8,6 +8,12 @@
  */
 void _puts_recursion(char *s)
 {
-Return (0);
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
 
+	_putchar(*s);
+	_puts_recursion(++s);
 }

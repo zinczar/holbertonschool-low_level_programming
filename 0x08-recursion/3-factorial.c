@@ -1,4 +1,4 @@
-#include ”holberton.h”
+#include "holberton.h"
 
 /**
  * factorial - code
@@ -8,6 +8,13 @@
  */
 int factorial(int n)
 {
-Return (0);
-
+	if (n == 0)
+	{
+		return (1);
+	}
+	else if (n < 0)
+	{
+		return (-1);
+	}
+	return (n * factorial(n - 1));
 }

@@ -15,7 +15,14 @@ int _sqrt_recursion(int n)
 	return (i);
 
 }
-
+/**
+ * _sqrt_helper- Uses recursion
+ * @counter: Int
+ * @path_to_sqrt: Int
+ * @n: Int
+ *
+ * Return: Counter
+ */
 int _sqrt_helper(int counter, int path_to_sqrt, int n)
 {
 	if (n == 0)

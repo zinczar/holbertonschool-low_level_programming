@@ -1,11 +1,21 @@
-#include holberton.h
+#include "holberton.h"
 
 /**
- * main - code
+ * puts2 - code
+ * @str: Char
  *
  * Return: Always 0.
  */
-int main(void)
+void puts2(char *str)
 {
-    return (0);
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (str[i] % 2 == 0)
+		{
+			_putchar(str[i]);
+		}
+	}
+	_putchar('\n');
 }

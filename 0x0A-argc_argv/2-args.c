@@ -1,11 +1,19 @@
 #include "holberton.h"
 
-/**                            
+/**
  * main - code
- *
+ * @argc: Int
+ * @argv: Char
+ *  *
  * Return: Always 0.
  */
-void main(void)
+int main(int argc, char *argv[])
 {
-Return (0);
+	int i;
+
+	for (i = 0; i < argc; i++)
+	{
+		printf("%s\n", argv[i]);
+	}
+return (0);
 }

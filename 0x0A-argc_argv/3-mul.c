@@ -12,12 +12,12 @@ int main(int argc, char *argv[])
 	if (argc == 3)
 	{
 		int mult = atoi(argv[1]) * atoi(argv[2]);
-	printf("%d\n", mult);
+		printf("%d\n", mult);
+	return (0);
 	}
 	else
 	{
 		printf("error\n");
 		return (1);
 	}
-return (0);
 }

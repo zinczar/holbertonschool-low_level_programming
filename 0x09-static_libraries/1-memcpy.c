@@ -2,6 +2,9 @@
 
 /**
  * *_memcpy - code
+ * @dest: Char
+ * @src: Char
+ * @n: Unsigned Int
  *
  * Return: Always 0.
  */

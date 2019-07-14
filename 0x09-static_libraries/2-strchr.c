@@ -1,7 +1,9 @@
 #include "holberton.h"
 
 /**
- * main - code
+ * _strchr - code
+ * @s: Char
+ * @c: Char
  *
  * Return: Always 0.
  */

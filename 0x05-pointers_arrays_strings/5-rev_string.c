@@ -18,7 +18,6 @@ void rev_string(char *s)
 		s[i] = s[strlen];
 		s[strlen--] = buffer;
 	}
-	printf("%s\n", s);
 }
 
 

@@ -1,11 +1,13 @@
 #include "holberton.h"
 
-/**                            
+/**
  * main - code
  *
  * Return: Always 0.
  */
-void main(void)
+int main(int argc, __attribute__((unused))char *argv[])
 {
-Return (0);
+	_putchar(argc);
+
+return (0);
 }

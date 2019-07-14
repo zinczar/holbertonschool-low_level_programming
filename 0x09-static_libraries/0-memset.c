@@ -2,6 +2,9 @@
 
 /**
  * *_memset - code
+ * @s: Char
+ * @b: Char
+ * @n: Unsigned Int
  *
  * Return: Always 0.
  */

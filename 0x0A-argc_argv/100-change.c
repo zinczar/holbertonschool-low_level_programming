@@ -13,8 +13,6 @@ int main(int argc, char *argv[])
 	int total_coins = 0;
 	int money = atoi(argv[1]);
 
-	printf("%d\n", money);
-
 	if (money < 0)
 	{
 		printf("0\n");

@@ -19,8 +19,6 @@ int main(int argc, char *argv[])
 	}
 	if (argc == 2)
 	{
-		if (money > 25)
-		{
 			quarters = money / 25;
 			remaining = money % 25;
 			dimes = remaining / 10;
@@ -28,25 +26,7 @@ int main(int argc, char *argv[])
 			nickels = remaining / 5;
 			remaining = remaining % 5;
 			pennies = remaining;
-		}
-                else if (money < 25 && money > 10)
-                {
-                        dimes = money / 10;
-                        remaining = remaining % 10;
-                        nickels = remaining / 5;
-                        remaining = remaining % 5;
-                        pennies = remaining;
-                }
-                else if (money < 10 && money > 5)
-                {
-                        nickels = money / 5;
-                        remaining = remaining % 5;
-                        pennies = remaining;
-                }
-		else
-		{
-			pennies = money;
-		}
+
 		total_coins = quarters + dimes + nickels + pennies;
 		printf("%d\n", total_coins);
 	}

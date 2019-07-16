@@ -20,13 +20,15 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	newstr = malloc(strlen * (sizeof(char)));
+	newstr = malloc((strlen + 1) * (sizeof(char)));
 
-		if (newstr == NULL)
-			return (NULL);
+	if (newstr == NULL)
+		return (NULL);
 
-			for (j = 0; j < strlen; j++)
-				newstr[j] = str[j];
+	for (j = 0; j < strlen; j++)
+		newstr[j] = str[j];
+
+	newstr[strlen + 1] = '\0';
 
 return (newstr);
 

@@ -8,6 +8,23 @@
  */
 char *_strdup(char *str)
 {
-return (0);
+	char *newstr;
+	int i = 0, j, strlen = 0;
+
+	while (str[i] != '\0')
+	{
+		strlen++;
+		i++;
+	}
+
+	newstr = malloc(strlen * (sizeof(char)));
+
+		if (newstr == NULL || str == NULL)
+			return (NULL);
+
+			for (j = 0; j < strlen; j++)
+				newstr[j] = str[j];
+
+return (newstr);
 
 }

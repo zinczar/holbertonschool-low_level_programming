@@ -9,31 +9,33 @@
  */
 int main(int argc, char *argv[])
 {
-	int remaining = 0, quarters = 0, dimes = 0, nickels = 0, pennies = 0;
+	int remaining = 0;
 	int total_coins = 0;
-	int money = atoi(argv[1]);
+	int money = 0;
 
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	money = atoi(argv[1]);
 	if (money < 0)
 	{
 		printf("0\n");
 	}
-	if (argc == 2)
-	{
-			quarters = money / 25;
-			remaining = money % 25;
-			dimes = remaining / 10;
-			remaining = remaining % 10;
-			nickels = remaining / 5;
-			remaining = remaining % 5;
-			pennies = remaining;
-
-		total_coins = quarters + dimes + nickels + pennies;
-		printf("%d\n", total_coins);
-	}
 	else
 	{
-		printf("Error\n");
-		return (1);
+		total_coins = money / 25;
+		remaining = money % 25;
+		total_coins = total_coins + (remaining / 10);
+		remaining = remaining % 10;
+		total_coins = total_coins + (remaining / 5);
+		remaining = remaining % 5;
+		total_coins = total_coins + (remaining / 2);
+		remaining = remaining % 2;
+		total_coins = total_coins + remaining;
+
+		printf("%d\n", total_coins);
 	}
 	return (0);
 }

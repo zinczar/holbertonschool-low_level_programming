@@ -25,19 +25,18 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	}
 
-	newstr = malloc(((strlen1 + strlen2) - 1) * (sizeof(char)));
+	newstr = malloc(((strlen1 + strlen2 + 1) * (sizeof(char))));
 
 	if (newstr == NULL)
 		return (NULL);
 
 	for (k = 0; s1[k] != '\0'; k++)
-			newstr[k] = s1[k];
+		newstr[k] = s1[k];
 
 	for (l = 0 ; s2[l] != '\0' ; l++)
 		newstr[strlen1 + l] = s2[l];
 
-	newstr[(strlen1 + strlen2)] = '\0';
+	newstr[strlen1 + strlen2 + 1] = '\0';
 
 	return (newstr);
-
 }

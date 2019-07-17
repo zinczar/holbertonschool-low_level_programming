@@ -13,9 +13,6 @@ char *str_concat(char *s1, char *s2)
 	int i = 0, j = 0, k = 0, l = 0;
 	int strlen1 = 0, strlen2 = 0;
 
-	if (s1 == NULL)
-		return (NULL);
-
 	while (s1[i] != '\0')
 	{
 		strlen1++;
@@ -39,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 	for (l = 0 ; s2[l] != '\0' ; l++)
 		newstr[strlen1 + l] = s2[l];
 
-	newstr[((strlen1 + strlen2) + 1)] = '\0';
+	newstr[(strlen1 + strlen2)] = '\0';
 
 	return (newstr);
 

@@ -9,6 +9,24 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-return (0);
+	void *x;
+	unsigned char *z;
+	unsigned int i;
+	size_t y;
 
+	if (nmemb == 0 || size == 0)
+		return(NULL);
+
+	y = (nmemb * size);
+        z = malloc(y);
+
+	if (z == NULL)
+		return (NULL);
+
+	for (i = 0; i < nmemb; i++)
+		z[i] = 0;
+
+	x = z;
+
+return (x);
 }

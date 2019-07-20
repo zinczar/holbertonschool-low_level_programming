@@ -26,7 +26,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_p == NULL)
 		return (NULL);
 
-	_memcopy(new_p, ptr, new_size < old_size ? new_size : old_size);
+	_memcopy(new_p, ptr, old_size < new_size ? old_size : new_size);
 
 	free(ptr);
 
@@ -45,7 +45,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
  */
 char *_memcopy(char *dest, char *src, unsigned int n)
 {
-	while(n--)
+	while (n--)
 		*(dest + n) = *(src + n);
 	return (dest);
 }

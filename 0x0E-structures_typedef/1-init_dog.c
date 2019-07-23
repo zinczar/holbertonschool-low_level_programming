@@ -1,13 +1,17 @@
 #include "dog.h"
 
 /**
- * main - Code
+ * init_dog - Code
+ * @d: dog Struct
+ * @name: Dog name
+ * @age: Dog age
+ * @owner: Dog owner
  *
  * Return: 0
  */
-int main(void)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-
-return (0);
-
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }

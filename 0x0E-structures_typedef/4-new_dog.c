@@ -39,7 +39,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 /**
  * _strlen - code
- * @s: Char
+ * @str: Char
  *
  * Return: Always 0.
  */
@@ -52,9 +52,16 @@ unsigned int _strlen(char *str)
 		strlen++;
 		i++;
 	}
-	return(strlen);
+	return (strlen);
 }
 
+/**
+ * _strcpy - Code
+ * @dest: Char
+ * @src: Char
+ *
+ * Return: Dest
+ */
 char *_strcpy(char *dest, char *src)
 {
 	unsigned int src_len, i;

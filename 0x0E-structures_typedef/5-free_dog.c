@@ -1,4 +1,6 @@
 #include "dog.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * free_dog - Code
@@ -8,7 +10,7 @@
  */
 void free_dog(dog_t *d)
 {
-
-return (0);
-
+	free(d->owner);
+	free(d->name);
+	free(d);
 }

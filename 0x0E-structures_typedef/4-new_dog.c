@@ -1,12 +1,18 @@
 #include "dog.h"
 
 /**
- * main - Code
+ * new_dog - Code
+ * @name: Char
+ * @age: Float
+ * @owner: Char
  *
  * Return: 0
  */
-int main(void)
+dog_t *new_dog(char *name, float age, char *owner)
 {
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 
 return (0);
 

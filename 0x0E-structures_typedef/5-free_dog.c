@@ -1,11 +1,12 @@
 #include "dog.h"
 
 /**
- * main - Code
+ * free_dog - Code
+ * @d: Struct
  *
  * Return: 0
  */
-int main(void)
+void free_dog(dog_t *d)
 {
 
 return (0);

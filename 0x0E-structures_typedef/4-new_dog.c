@@ -15,6 +15,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *good_dog;
 	unsigned int name_len, owner_len;
 
+	if (!name || !owner)
+		return(NULL);
+
 	name_len = _strlen(name);
 	owner_len = _strlen(owner);
 

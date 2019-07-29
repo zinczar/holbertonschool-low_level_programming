@@ -28,12 +28,9 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				string = va_arg(valist_all, char*);
-				if (!string)
-				{
-					printf("(nil)");
-					break;
-				}
-				printf("%s, ", string);
+				if (string == NULL)
+					string = "(nil)";
+					printf("%s, ", string);
 				break;
 			default:
 				i++;

@@ -21,25 +21,19 @@ void print_all(const char * const format, ...)
 			switch (format[i])
 			{
 			case 'c':
-				if (i != 0)
-					printf(", ");
-				printf("%c",va_arg(valist_all, int));
+				printf("%c, ", va_arg(valist_all, int));
 				break;
 			case 'i':
-				if (i != 0)
-					printf(", ");
-				printf("%i", va_arg(valist_all, int));
+				printf("%i, ", va_arg(valist_all, int));
 				break;
 			case 's':
-				if (i != 0)
-					printf(", ");
 				string = va_arg(valist_all, char*);
 				if (!string)
 				{
 					printf("(nil)");
 					break;
 				}
-				printf("%s", string);
+				printf("%s, ", string);
 				break;
 			default:
 				i++;

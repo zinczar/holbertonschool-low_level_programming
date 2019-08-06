@@ -8,7 +8,16 @@
  */
 int sum_listint(listint_t *head)
 {
+	unsigned int count = 0;
+	listint_t *current = head;
 
-return (0);
+	if (!head)
+		return (0);
 
+	while (current)
+	{
+		count += current->n;
+		current = current->next;
+	}
+	return (count);
 }

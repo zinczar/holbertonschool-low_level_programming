@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "lists.h"
 
 /**
  * print_list - code
@@ -8,5 +8,18 @@
  */
 size_t print_list(const list_t *h)
 {
-return (0);
+	unsigned int count = 0;
+
+	while (h)
+	{
+		if (h->str)
+			printf("[%i] %s\n", h->len, h->str);
+
+		else
+			printf("[0] (nil)\n");
+
+		count++;
+		h = h->next;
+	}
+	return (count);
 }

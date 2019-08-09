@@ -12,6 +12,9 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int shifted;
 
+	if (!index)
+		return (-1);
+
 	shifted = (n >> index);
 
 	if (shifted & 1)

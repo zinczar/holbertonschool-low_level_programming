@@ -10,10 +10,10 @@ int get_endianness(void)
 {
 	unsigned int n = 1;
 
-	char *c = (char*) &n;
+	char *c = (char *) &n;
 
 	if (*c)
 		return (*c == 1);
 	else
-		return(0);
+		return (0);
 }

@@ -5,7 +5,7 @@
  *
  * Return: 0
  */
-int main(void)
+void binary_tree_delete(binary_tree_t *tree)
 {
 
 return (0);

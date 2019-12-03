@@ -5,7 +5,7 @@
  *
  * Return: 0
  */
-int main(void)
+binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
 
 return (0);

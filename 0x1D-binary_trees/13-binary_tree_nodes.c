@@ -5,7 +5,7 @@
  *
  * Return: 0
  */
-int main(void)
+size_t binary_tree_nodes(const binary_tree_t *tree)
 {
 
 return (0);

@@ -5,7 +5,7 @@
  *
  * Return: 0
  */
-int main(void)
+void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 {
 
 return (0);

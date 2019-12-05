@@ -1,9 +1,11 @@
 #include "binary_trees.h"
 
 /**
- * main - Code
+ * binary_tree_inorder - Goes through a binary tree using in-order traversal
+ *@tree: binary_tree_t
+ *@func: Int
  *
- * Return: 0
+ * Return: Void
  */
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 {
